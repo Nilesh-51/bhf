@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABCD123</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>RA2111033010136</h1>
+        <form id="inputForm">
+            <textarea id="jsonInput" placeholder='{"data": ["A", "C", "z"], "file_b64": "BASE_64_STRING"}' required></textarea>
+            <button type="submit">Submit</button>
+            <p id="errorMessage" class="error"></p>
+        </form>
+        
+        <div id="filterSection" class="hidden">
+            <label for="filterSelect">Multi Filter:</label>
+            <select id="filterSelect" multiple>
+                <option value="alphabets">Alphabets</option>
+                <option value="numbers">Numbers</option>
+                <option value="highestLowercase">Highest Lowercase Alphabet</option>
+            </select>
+            <button id="filterButton">Filter Response</button>
+        </div>
+
+        <div id="responseSection" class="hidden">
+            <h2>Filtered Response</h2>
+            <pre id="responseOutput"></pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
